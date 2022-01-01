@@ -4,7 +4,7 @@
 
 
 **⚠️ THIS IS A FORK, THE ORIGINAL REPO IS [HERE](https://github.com/kjeymax/GDUPLOAD_BOT2)**
-
+**Still kinda bugged, some files don't upload, no confirmation/error messages, some cloning fails. Wait for a better update before forking 😉**
 
 ## Features
 - [X] Telegram files support.
