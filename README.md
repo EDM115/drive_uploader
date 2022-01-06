@@ -1,6 +1,6 @@
 # Google Drive Uploader Telegram Bot
-**A Telegram bot to upload files from Telegram or Direct links to Google Drive.**
-~~- Find it on Telegram as [Google Drive Uploader](https://t.me/gdriveruploadtd_bot)~~
+**A Telegram bot to upload files from Telegram or Direct links to Google Drive.**\
+~~Find it on Telegram as [Google Drive Uploader](https://t.me/gdriveruploadtd_bot)~~
 
 
 **⚠️ THIS IS A FORK, THE ORIGINAL REPO IS [HERE](https://github.com/kjeymax/GDUPLOAD_BOT2)**
