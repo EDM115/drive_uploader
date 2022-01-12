@@ -4,25 +4,34 @@
 
 
 **⚠️ THIS IS A FORK, THE ORIGINAL REPO IS [HERE](https://github.com/kjeymax/GDUPLOAD_BOT2)**
-**Still kinda bugged, some files don't upload, no confirmation/error messages, some cloning fails. Wait for a better update before forking 😉**
+**Still kinda bugged, some files don't upload, no confirmation/error messages, some cloning fails. Wait for a better update before forking 😉**  
 
-## Features
-- [X] Telegram files support.
-- [X] Direct Links support.
-- [X] Custom Upload Folder.
-- [X] TeamDrive Support.
-- [X] Clone/Copy Google Drive Files.
-- [X] Delete Google Drive Files.
-- [X] Empty Google Drive trash.
-- [X] YouTube-DL Support.
+### <u>Bugs noted out (they needs fix) :</u>
+- [ ] When using a custom folder ID and you mirror files, it's okay BUT while mirroring a folder, every folder is going to be on the root ID you set up, not inside its respective parent folder. Kinda annoying thing...
+- [ ] Needs to add a progress bar + remaining time
+- [ ] `/ytdl` command is bugged out, needs fix due to yt-dl update
+- [ ] Merge `/del` and `/delete` commands
+- [ ] The `/emptytrash` command don't really works...
+
+
+# Features
+- [X] Telegram files support
+- [X] Direct Links support
+- [X] Custom Upload Folder
+- [X] TeamDrive Support
+- [X] Clone/Copy Google Drive Files
+- [X] Delete Google Drive Files
+- [X] Empty Google Drive trash
+- [X] YouTube-DL Support
 - [X] Docker Supported
 - [X] FB-dl Supported
 - [X] Anonfiles Supported
 - [X] LK21 Supported
 - [X] Solidfiles Supported
 - [X] Mediafire Supported
-- [X] Zippy Supported...
+- [X] Zippy Supported
 
+---
 
 ### How To Deploy Video Tutorial:
 
@@ -42,15 +51,14 @@
 
 [![Deploy to Qovery](https://img.shields.io/badge/Deploy-Qovery-6EC0D9.svg)](https://qovery.com)
 
-
-
+---
 
 ### Installation
-- Install required modules.
+- Install required modules
 ```sh
 apt install -y git python3 ffmpeg
 ```
-- Clone this git repository.
+- Clone this git repository
 ```sh 
 git clone https://github.com/EDM115/drive_uploader
 ```
@@ -65,15 +73,15 @@ pip3 install -r requirements.txt
 
 ### Configuration
 **There are two Ways for configuring this bot.**
-1. Add values to Environment Variables. And add a `ENV` var to Anything to enable it.
-2. Add values in [config.py](./bot/config.py). And make sure that no `ENV` environment variables existing.
+1. Add values to Environment Variables. And add a `ENV` var to Anything to enable it
+2. Add values in [config.py](./bot/config.py). And make sure that no `ENV` environment variables existing
 
 ### Configuration Values
 - `BOT_TOKEN` - Get it by contacting to [BotFather](https://t.me/botfather)
 - `APP_ID` - Get it by creating app on [my.telegram.org](https://my.telegram.org/apps)
 - `API_HASH` - Get it by creating app on [my.telegram.org](https://my.telegram.org/apps)
-- `SUDO_USERS` - List of Telegram User ID of sudo users, seperated by space.
-- `DATABASE_URL` - Postgres database url.
+- `SUDO_USERS` - List of Telegram User ID of sudo users, seperated by space
+- `DATABASE_URL` - Postgres database url
 - `DOWNLOAD_DIRECTORY` - Custom path for downloads. Must end with a forward `/` slash. (Default to `./downloads/`)
 
 ### Deploy 
@@ -81,16 +89,24 @@ pip3 install -r requirements.txt
 python3 -m bot
 ```
 
-### COMMANDS FOR THE BOT TO BE USED-
+---
+
+### COMMANDS FOR THE BOT TO BE USED
 ```
-- start - useless command
+- start - useless command 😪
 - help - How to use me
 - auth - Authorizing GDrive Account
-- setfolder - Set Custom Upload Folder
+- setfolder - Set custom upload folder
 - copy - Copy GDrive Files
 - revoke - Revoke GDrive Account
 - del - Delete GDrive Files
+- delete - Delete GDrive files and folders (as well 🤓)
+- emptytrash - Delete all files in your GDrive trashbin [BE CAREFUL WITH THIS ⚠️]
+- ytdl - Download through yt-dl
 ```
+
+---
+
 ## Credits
 - [Dan](https://github.com/delivrance) for creating [PyroGram](https://pyrogram.org)
 - [Spechide](https://github.com/Spechide) for [gDriveDB.py](./bot/helpers/sql_helper/gDriveDB.py)
