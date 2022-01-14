@@ -32,11 +32,11 @@
     },
     "G_DRIVE_CLIENT_ID": {
       "description": "Google Drive Client ID from Google Cloud Platform",
-      "value": "164285508095-eg2tpr498r0ar5dk4hasps6oqb8dgifu.apps.googleusercontent.com"
+      "value": ""
     },
     "G_DRIVE_CLIENT_SECRET": {
       "description": "Google Drive Client Secret from Google Cloud Platform",
-      "value": "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"
+      "value": ""
     }
   },
    "addons": [{
